@@ -1,0 +1,246 @@
+.header {
+  background: #EDCB54;
+  display: flex;
+  flex-flow: column nowrap; }
+
+.menu {
+  background-color: #EDCB54;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100px;
+  align-items: center;
+  border-bottom: 1px solid white; }
+
+.logo {
+  flex: 1 1 auto; }
+
+.nav {
+  flex: 5 1 auto; }
+
+.nav a {
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px; }
+
+.nav a:hover {
+  color: bisque;
+  transition: 0.5s; }
+
+.social {
+  display: flex;
+  flex: 1 1 auto; }
+
+.social a {
+  font-size: 18px;
+  color: black;
+  padding: 0 5px; }
+
+.social a:hover {
+  color: bisque;
+  transition: 0.5s; }
+
+.section {
+  display: flex;
+  color: white;
+  padding-left: 15px; }
+
+.articulos {
+  flex: 2 1 auto;
+  display: flex;
+  flex-flow: row wrap; }
+
+.article {
+  flex: 1 1 40%;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 10px 10px 0 0px;
+  flex: 1 1 45%; }
+
+.article a {
+  font-size: 18px;
+  color: #EDCB54;
+  padding: 0 0px; }
+
+.article a:hover {
+  color: bisque;
+  transition: 0.5s; }
+
+h3 {
+  font-size: 13px;
+  padding: 10px 0;
+  margin-top: -5px; }
+
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0px 0 10px 0; }
+
+.navegacion {
+  display: flex;
+  flex: 1 1 100%;
+  padding-top: 15px;
+  justify-content: center; }
+
+.navegacion a {
+  font-size: 18px;
+  color: #e7b0b0;
+  padding: 0 5px; }
+
+.navegacion a:hover {
+  color: bisque;
+  transition: 0.5s; }
+
+.aside {
+  padding-top: 10%;
+  padding-right: 15px;
+  justify-content: center; }
+
+.club {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin: 10px; }
+
+.club a {
+  color: #EDCB54; }
+
+.club a:hover {
+  color: bisque;
+  transition: 0.5s; }
+
+.galeria__principal {
+  display: grid;
+  grid-template-areas: 'foto3 foto3 foto2 foto2 foto2 foto2' 'foto3 foto3 foto4 foto1 foto1 foto1' 'foto6 foto6 foto6 foto6 foto5 foto5';
+  grid-template-columns: repeat(6, auto);
+  align-content: stretch;
+  gap: 10px;
+  padding: 0.5vw;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.galeria__principal div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.galeria__principal div img:hover {
+  width: 101%; }
+
+.foto1 {
+  grid-area: foto1; }
+
+.foto2 {
+  grid-area: foto2; }
+
+.foto3 {
+  grid-area: foto3; }
+
+.foto4 {
+  grid-area: foto4; }
+
+.foto5 {
+  grid-area: foto5; }
+
+.foto6 {
+  grid-area: foto6; }
+
+.form {
+  width: 30%;
+  color: white; }
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: 50%; }
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+input[type=submit] {
+  background-color: #EDCB54;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: bisque; }
+
+.container {
+  border-radius: 5px;
+  padding: 20px; }
+
+.footer {
+  background: #EDCB54;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  left: 0; }
+
+.footer a {
+  list-style: none;
+  color: #353535; }
+
+.footer a:hover {
+  background-color: #EDCB54;
+  transition: 0.5s; }
+
+.pie {
+  padding-top: 10px;
+  background-color: #EDCB54;
+  width: 100%;
+  text-align: center; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif; }
+
+.body {
+  background: black; }
+
+.padre {
+  display: flex;
+  flex-flow: column nowrap;
+  background: black; }
+
+.texto__principal {
+  display: flex;
+  justify-content: center; }
+
+@media all and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+    text-align: center; }
+  .menu {
+    flex-direction: column;
+    height: auto;
+    text-align: center; }
+  .aside {
+    display: flex;
+    justify-content: center; } }
+
+@media all and (max-width: 600px) {
+  .articulos {
+    flex-direction: column; }
+  img {
+    width: 180px; } }
+
+@media all and (max-widht: 400px) {
+  .aside {
+    flex-flow: column; } }
